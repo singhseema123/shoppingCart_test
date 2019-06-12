@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous"> 
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <link rel="stylesheet" href="./css/style.css"> 
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+</head>
+
+<body>
+<div id="mocha">
+  <div class="container">
+    <h1>Best Game in Town</h1>
+      <div class="row">
+          <div class="col-6 productPane">
+              <input id="filterinput" placeholder="Filter Category..">
+              <button id="filterCat">Filter</button>
+              <button id="clearfilter">Clear Filter</button>
+              <table class="table table-bordered">
+                  <thead>
+                    <tr>
+                      <th>Category</th>
+                      <th>Item</th>
+                      <th>Price</th>
+                      
+                    </tr>
+                  </thead>
+                  <tbody class="prodtabbody">
+                  </tbody>
+                </table>  
+          </div>
+          <div class="col-6 shoppingCartPane">
+              <h2>Shopping Cart</h2>
+              <table class="table table-bordered">
+                  <tbody class="carttabbody">
+                  </tbody>
+
+          </div>
+      </div>
+      
+  </div>
+ </div>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/5.2.0/mocha.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/chai/4.1.2/chai.min.js"></script>
+  <script src="https://sinonjs.org/releases/sinon-6.1.4.js"></script>
+  <script>
+    mocha.ui('bdd');
+    mocha.reporter('html');
+    const expect = chai.expect;
+  </script>
+  <script src="./assets/javascript/shoppingSite.js"></script>
+  <!-- <script src="test.js"></script> -->
+  <script>
+    mocha.run();
+  </script>
+
+</body>
+
+</html>
